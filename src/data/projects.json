@@ -1,0 +1,26 @@
+[
+  {
+    "title": "projeto anark",
+    "description": "Buscamos um profissional especializado em desenvolvimento web para criar um site responsivo e moderno para nosso restaurante. O site deve incluir as seguintes funcionalidades:\r\n\r\nHome Page: com informações sobre o restaurante, horários de funcionamento e localização.\r\nCardápio Digital: página dedicada para exibir nosso cardápio, com fotos e descrições detalhadas dos pratos.\r\nSistema de Reservas: funcionalidade para os clientes realizarem reservas online.\r\nBlog: seção para publicar notícias, receitas e novidades sobre o restaurante.\r\nIntegração com Redes Sociais: links diretos para nossas páginas no Instagram, Facebook e Twitter.",
+    "value": 50,
+    "id": 6
+  },
+  {
+    "id": 8,
+    "title": "tes1234567",
+    "description": "Ra ra-ah-ah-ah\r\nRoma, Roma-ma\r\nGaga, oh la-la\r\nWant your bad romance\r\n\r\nI want your ugly, I want your disease\r\nI want your everything as long as it's free\r\nI want your love\r\nLove, love, love, I want your love, yeah",
+    "value": 1003
+  },
+  {
+    "id": 9,
+    "title": "aula test",
+    "description": "test test 123456",
+    "value": 500
+  },
+  {
+    "id": 10,
+    "title": "Mudança de Vida",
+    "description": "Primeiro módulo das nossas mudanças de vida!",
+    "value": 5000.99
+  }
+]

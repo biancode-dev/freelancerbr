@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Inclusão do Header -->
+    <%- include('../partials/header') %>
+
+        <main>
+            <div class="container">
+                <h1>Detalhes do Projeto</h1>
+
+                <div class="project-details">
+                    <% if (project) { %>
+                        <h2>
+                            <%= project.title %>
+                        </h2>
+                        <p><strong>Descrição:</strong>
+                            <%= project.description %>
+                        </p>
+                        <p><strong>Valor:</strong> R$
+                            <%= typeof project.value==='number' ? project.value.toFixed(2) : '0.00' %>
+                        </p>
+                        <% } else { %>
+                            <p>Projeto não encontrado.</p>
+                            <% } %>
+                </div>
+
+                <!-- Botões de Ação -->
+                <div class="buttons-container">
+
+
+                    <form action="/projects/delete/<%= project.id %>" method="POST"
+                        onsubmit="return confirm('Tem certeza que deseja excluir este projeto?');">
+                        <input type="hidden" name="_method" value="DELETE"> <!-- Usando método DELETE -->
+                        <button type="submit" class="btn btn-danger">Excluir Projeto</button>
+                        <!-- Botão Voltar para Lista -->
+                        <a href="/projects" class="btn">Voltar para Lista</a>
+                        <% if (project) { %>
+                            <a href="/projects/<%= project.id %>/edit" class="btn">Editar Projeto</a>
+                            <% } %>
+
+                            
+                </div>
+            </div>
+        </main>
+
+        <!-- Inclusão do Footer -->
+        <%- include('../partials/footer') %>
+</body>
+
+</html>

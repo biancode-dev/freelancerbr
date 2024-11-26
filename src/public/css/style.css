@@ -1,0 +1,229 @@
+/* ============================
+   Reset Básico de Estilos
+   ============================ */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================
+   Layout da Página
+   ============================ */
+html, body {
+    height: 100%;  /* Garantir que o HTML e o body ocupem toda a altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;  /* Organizar a página em uma coluna */
+    font-family: Arial, sans-serif;  /* Fonte padrão */
+    line-height: 1.6;  /* Melhor legibilidade */
+    background-color: #f4f4f4;  /* Cor de fundo leve */
+}
+
+/* ============================
+   Container Principal
+   ============================ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;  /* Centraliza o conteúdo */
+    padding: 20px;
+}
+
+/* ============================
+   Header (Cabeçalho)
+   ============================ */
+header {
+    background-color: var(--header-bg, #2c3e50);  /* Cor de fundo com variável */
+    padding: 20px 0;
+}
+
+/* Links de navegação */
+header .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;  /* Alinha os links à direita */
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+/* Estilo dos links de navegação */
+header .nav-links a {
+    color: var(--white, #ecf0f1);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ============================
+   Estilo dos Botões
+   ============================ */
+.btn {
+    background-color: var(--primary-color, #3498db);  /* Azul padrão */
+    color: var(--white, #fff);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-hover, #2980b9);  /* Azul hover */
+}
+
+/* Botão de perigo (exclusão, etc.) */
+.btn-danger {
+    background-color: var(--danger-color, #DC3545);
+   padding: 15px 20px ;  /* Vermelho padrão */
+   font-size: 15px;
+
+}
+
+.btn-danger:hover {
+    background-color: var(--danger-color-hover, #A71D2A);  /* Vermelho hover */
+}
+
+/* ============================
+   Lista de Projetos
+   ============================ */
+.projects-list {
+    margin-top: 30px;
+}
+
+.projects-list ul {
+    list-style: none;
+}
+
+.projects-list li {
+    background-color: var(--white, #fff);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Links dentro da lista de projetos */
+.projects-list a {
+    color: var(--text-color, #2c3e50);
+    text-decoration: none;
+}
+
+.projects-list a:hover {
+    text-decoration: underline;
+}
+
+/* ============================
+   Estilo de Formulários
+   ============================ */
+form {
+    background-color: var(--white, #fff);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form .form-group input,
+form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form .form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form .form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color, #3498db);
+    color: var(--white, #fff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .form-group button:hover {
+    background-color: var(--primary-color-hover, #2980b9);
+}
+
+/* ============================
+   Botões Adicionais
+   ============================ */
+.buttons-container {
+    margin-top: 20px;
+}
+
+.buttons-container .btn {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* ============================
+   Footer (Rodapé)
+   ============================ */
+footer {
+    background-color: var(--header-bg, #2c3e50);
+    color: var(--white, #fff);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: auto;  /* Coloca o footer no final da página */
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* ============================
+   Responsividade
+   ============================ */
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    form .form-group input,
+    form .form-group textarea {
+        padding: 8px;
+    }
+}
+
+h6 {
+    color: var(--primary-color, #3498db);
+    font-size: 25px;
+    
+}

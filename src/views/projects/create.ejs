@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Projeto - FreelancerBrasileiro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Inclusão do Header -->
+    <%- include('../partials/header') %>
+
+    <main>
+        <div class="container">
+            <h1>Cadastrar Novo Projeto</h1>
+
+            <!-- Formulário de Cadastro do Projeto -->
+            <form action="/projects/create" method="POST">
+                <div class="form-group">
+                    <label for="title">Título do Projeto</label>
+                    <input type="text" id="title" name="title" required placeholder="Digite o título do projeto">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descrição do Projeto</label>
+                    <textarea id="description" name="description" required placeholder="Detalhe o projeto..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="value">Valor (R$)</label>
+                    <input type="number" id="value" name="value" required step="0.01" placeholder="R$ 1000,00">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Cadastrar Projeto</button>
+                </div>
+            </form>
+
+            <!-- Botão de Voltar -->
+            <div class="buttons-container">
+                <a href="/projects" class="btn">Voltar para Lista de Projetos</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Inclusão do Footer -->
+    <%- include('../partials/footer') %>
+</body>
+</html>

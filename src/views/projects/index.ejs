@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Projetos - FreelancerBrasileiro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Inclusão do Header -->
+    <%- include('../partials/header') %>
+
+        <main>
+            <div class="container">
+                <h1>Lista de Projetos</h1>
+
+                <!-- Botão para Cadastrar um Novo Projeto -->
+                <div class="button-container">
+                    <a href="/projects/create" class="btn">Cadastrar Novo Projeto</a>
+                </div>
+
+                <!-- Exibição da lista de projetos -->
+                <div class="projects-list">
+                    <% if (projects && projects.length> 0) { %>
+                        <ul>
+                            <% projects.forEach(function(project) { %>
+                                <li class="project-item">
+                                    <!-- Link para detalhes do projeto -->
+                                    <a href="/projects/<%= project.id %>" class="project-link">
+                                        <h2>
+                                            <%= project.title %>
+                                        </h2>
+                                        <p>
+                                            <%= project.description %>
+                                        </p>
+                                        <p><strong>Valor:</strong> R$
+                                            <%= (typeof project.value==='number' ? project.value.toFixed(2)
+                                                : 'Indefinido' ) %>
+                                        </p>
+                                    </a>
+                                </li>
+                                <% }); %>
+                        </ul>
+                        <% } else { %>
+                            <p>Nenhum projeto encontrado.</p>
+                            <% } %>
+                </div>
+            </div>
+        </main>
+
+        <!-- Inclusão do Footer -->
+        <%- include('../partials/footer') %>
+</body>
+
+</html>
