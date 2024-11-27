@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+      height: 100vh; /* Define a altura igual à da janela */
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center;
+      background: linear-gradient(-120deg, #de38ff, #2a1847);
+}

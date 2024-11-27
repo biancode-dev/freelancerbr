@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./avaliação.css">
+    <link rel="icon" href="./icon.png" type="image/png">
+
+	<title>Form Reviews</title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<h3>Dê uma nota a este projeto.</h3>
+			<div>
+				<label for="nome">Nome do projeto</label><br>
+				<input type="text" id="nomeproj" name="nome" placeholder="Digite o nome do projeto" value=""><br><br>
+			</div> 
+            <form action="#">
+                <div class="rating">
+                    <input type="number" name="rating" hidden>
+                    <i class='bx bx-star star' style="--i: 0;"></i>
+                    <i class='bx bx-star star' style="--i: 1;"></i>
+                    <i class='bx bx-star star' style="--i: 2;"></i>
+                    <i class='bx bx-star star' style="--i: 3;"></i>
+                    <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+			
+			<textarea name="opinion" cols="30" rows="5" placeholder="Seu comentário..."></textarea>
+			<div class="btn-group">
+				<button type="submit" id="btnsubmit" class="btn submit">Enviar</button>
+				<button class="btn cancel">Cancelar</button>
+			</div>
+		</form>
+	</div>
+    
+    <script src="./script2.js"></script>
+	
+</body>
+</html>

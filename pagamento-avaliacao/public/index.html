@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.png" type="image/png">
+    <title>Adicionar Crédito</title>
+    <link rel="stylesheet" href="./front.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Informe os dados</h3>
+        <p>Deposite crédito em sua conta para ter saldo disponível quando precisar.</p>
+
+        <div class="info-header">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" value="">
+
+                    <br><br>
+                    <label for="documento">Documento</label>
+                    <div class="input-group">
+                        <select id="documento-tipo">
+                            <option value="CPF">CPF</option>
+                            <option value="CNPJ">CNPJ</option>
+                        </select>
+                        <input type="text" id="documento" value="">
+                    </div>
+                </div>
+
+                <label class="label" for="valor">Valor</label>
+                <div class="input-group">
+                    <select id="moeda">
+                        <option value="BRL">BRL</option>
+                    </select>
+                    <input type="number" id="valor" value="50">
+                </div>
+
+                <div class="payment-methods">
+                    <label>
+                        <input type="radio" name="payment" checked>
+                        Pix <span class="highlight">Mais rápido e seguro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="payment">
+                        Boleto bancário
+                    </label>
+                    <label>
+                        <input type="radio" name="payment">
+                        Cartão de Crédito em Reais
+                    </label>
+                    <label>
+                        <input type="radio" name="payment">
+                        MercadoPago
+                    </label>
+                </div>
+
+                <div class="total-box">
+                    <span class="total-label">Valor a adicionar</span>
+                    <span class="price" id="valor-total"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bnt-group">
+        <button id="confirmarCompra" class="bnt enviar">➜</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
