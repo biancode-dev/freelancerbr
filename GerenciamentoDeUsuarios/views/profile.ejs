@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile style.css">
+    <title>Perfil do Freelancer</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQyKvWzbZdz0CucUKj8XnZNSVTQL5Dbwqtg&s" alt="Foto de Perfil">
+                </div>
+                <div class="profile-info">
+                    <%= console.log("aqui",user) %>
+                    <h1><%= user.name %></h1>
+                    <p class="role">Freelancer Web Designer</p>
+                    <p class="location">Localização: São Paulo, Brasil</p>
+                    <button class="hire-button">Contratar</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sobre o Freelancer -->
+        <section class="about">
+            <h2>Sobre mim</h2>
+            <p>Sou um designer com experiência em criar soluções criativas para empresas de diversos segmentos. Tenho habilidades em design gráfico, criação de sites e muito mais. Estou sempre buscando novas formas de inovar e melhorar os resultados para os meus clientes.</p>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Design Gráfico</li>
+                <li>Web Design</li>
+                <li>UI/UX</li>
+                <li>Adobe Photoshop</li>
+                <li>HTML5 & CSS3</li>
+            </ul>
+        </section>
+
+        <!-- Portfólio -->
+        <section class="portfolio">
+            <h2>Portfólio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Projeto 1">
+                    <p>Projeto 1 - Descrição</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Projeto 2">
+                    <p>Projeto 2 - Descrição</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Projeto 3">
+                    <p>Projeto 3 - Descrição</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2024 Freelancer - Todos os direitos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>

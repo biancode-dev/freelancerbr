@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "neto",
+      "name": "Zé Neto",
+      "email": "ze@neto",
+      "password": "$2a$10$ry9hn6WWupaCe64XCWeDoue/HwnAo8v15JqPtHlQRm7f8AhrRx4Zq"
+    },
+    {
+      "username": "cristiano",
+      "name": "cristiano e ze neto",
+      "email": "cris@tiano",
+      "password": "$2a$10$yW.UyF2I05E/ABkZQMGEqum46javMD..s.fb.hc7d60Kk2ggC8xKq"
+    }
+  ]
+}
