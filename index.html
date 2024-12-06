@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Fast - Início</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/include.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body class="font-[Poppins] overflow-x-hidden">
+    <div data-include="partials/header.html"></div>
+
+    <main class="pt-20">
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">Projetos em destaque</h2>
+                <div id="projects-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Projetos serão inseridos aqui -->
+                </div>
+                <!-- Template para projetos -->
+                <template id="project-template">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold project-title"></h3>
+                        <p class="project-description"></p>
+                        <h2 class="text-x2 font-semibold mb-4 project-client"></h2>
+                    </div>
+                </template>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">Freelancers em destaque</h2>
+                <div id="freelancers-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Freelancers serão inseridos aqui -->
+                </div>
+                <!-- Template para freelancers -->
+                <template id="freelancer-template">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold freelancer-name"></h3>
+                        <p class="freelancer-skill"></p>
+                    </div>
+                </template>
+            </div>
+        </section>
+
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+</body>
+
+</html>
